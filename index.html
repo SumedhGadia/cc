@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Bhaiya</title>
+    <style>
+        /* General body styles */
+        body {
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Three equal parts */
+            height: 100vh; /* Full viewport height */
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Styling the left, center, and right sections */
+        .left-section, .center-section, .right-section {
+            padding: 20px;
+        }
+
+        .left-section {
+            background: url("balloon.webp") no-repeat center center;
+            background-size: cover;
+            height: 100%; /* Cover the full height */
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Center section with background image */
+        .center-section {
+            background: url("bg3.jpg") no-repeat center center;
+            background-size: cover;
+            height: 100%; /* Cover the full height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-section{
+            background: url("starbuckscoffee.jpg") no-repeat center center;
+            background-size: cover;
+            height: 100%; /* Cover the full height */
+            display: flex;
+
+        }
+
+        .center-section h1 {
+            margin-top: -130%;
+            color: #ff4081;
+        }
+
+        .right-section h2 {
+            margin-top: 130%;
+            color: rgb(243, 189, 28);
+            font-size: 1.5rem;
+        }
+
+        /* Audio container */
+        #sound-container {
+            margin-top: 70%;
+        }
+
+        p {
+            color: #000000;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left section for sound controls -->
+    <div class="left-section">
+        <div id="sound-container"style="margin: top 80%;">
+            <audio controls>
+                <source src="bdji.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p style="font-family: 'Times New Roman', Times, serif;">Press to Play Happy Birthday</p>
+        </div>
+    </div>
+
+    <!-- Center section for Happy Birthday message with background image -->
+    <div class="center-section">
+        <h1>Happy Birthday Bhaiya</h1>
+    </div>
+
+    <!-- Right section for sentence -->
+    <div class="right-section">
+        <h2>"Happy Birthday! Mere side se ek Starbucks coffee free!!!"</h2>
+    </div>
+
+</body>
+</html>
